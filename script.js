@@ -13,16 +13,16 @@ let score=0
 let gameRunning=false
 
 const avatar=new Image()
-avatar.src="assets/avatar.png"
+avatar.src="avatar.png"
 
 const pipeImg=new Image()
-pipeImg.src="assets/pipe.png"
+pipeImg.src="pipe.png"
 
 const bg=new Image()
-bg.src="assets/background.png"
+bg.src="background.png"
 
-const jumpSound=new Audio("assets/jump.mp3")
-const hitSound=new Audio("assets/hit.mp3")
+const jumpSound=new Audio("jump.mp3")
+const hitSound=new Audio("hit.mp3")
 
 let bird={
 x:80,
@@ -171,3 +171,4 @@ resetGame()
 gameRunning=true
 update()
 }
+
