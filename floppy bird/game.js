@@ -34,8 +34,8 @@ height:40
 }
 
 let pipes=[]
-let gap=220
-let pipeWidth=100
+let gap=300
+let pipeWidth=170
 
 function resetGame(){
 bird.y=200
@@ -175,4 +175,5 @@ gameRunning=true
 update()
 
 }
+
 
