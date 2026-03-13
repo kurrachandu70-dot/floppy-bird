@@ -1,10 +1,10 @@
 const canvas = document.getElementById("gameCanvas")
 const ctx = canvas.getContext("2d")
 
-canvas.width = 400
+canvas.width = 600
 canvas.height = 600
 
-let gravity = 0.8
+let gravity = 1.2
 let velocity = 0
 let lift = -9
 
@@ -175,5 +175,6 @@ gameRunning=true
 update()
 
 }
+
 
 
