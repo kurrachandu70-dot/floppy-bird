@@ -1,7 +1,7 @@
 const canvas=document.getElementById("gameCanvas")
 const ctx=canvas.getContext("2d")
 
-canvas.width=400
+canvas.width=600
 canvas.height=600
 
 let gravity=0.8
@@ -26,14 +26,14 @@ const hitSound=new Audio("hit.mp3")
 
 let bird={
 x:80,
-y:200,
+y:80,
 width:40,
 height:40
 }
 
 let pipes=[]
-let pipeWidth=70
-let gap=150
+let pipeWidth=100
+let gap=250
 
 function resetGame(){
 bird.y=200
@@ -171,4 +171,5 @@ resetGame()
 gameRunning=true
 update()
 }
+
 
