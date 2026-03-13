@@ -1,30 +1,28 @@
-const canvas = document.getElementById("gameCanvas")
-const ctx = canvas.getContext("2d")
+const canvas=document.getElementById("gameCanvas")
+const ctx=canvas.getContext("2d")
 
-canvas.width = 600
-canvas.height = 600
+canvas.width=400
+canvas.height=600
 
-let gravity = 1.2
-let velocity = 0
-let lift = -9
+let gravity=0.8
+let velocity=0
+let lift=-9
 
-let gameRunning = false
-let frame = 0
-let score = 0
+let frame=0
+let score=0
+let gameRunning=false
 
-// images
-const avatar = new Image()
-avatar.src = "avatar.png"
+const avatar=new Image()
+avatar.src="assets/avatar.png"
 
-const pipeImg = new Image()
-pipeImg.src = "pipe.png"
+const pipeImg=new Image()
+pipeImg.src="assets/pipe.png"
 
-const bg = new Image()
-bg.src = "background.png"
+const bg=new Image()
+bg.src="assets/background.png"
 
-// sounds
-const hitSound = new Audio("hit.mp3")
-const jumpSound = new Audio("jump.mp3")
+const jumpSound=new Audio("assets/jump.mp3")
+const hitSound=new Audio("assets/hit.mp3")
 
 let bird={
 x:80,
@@ -34,8 +32,8 @@ height:40
 }
 
 let pipes=[]
-let gap=300
-let pipeWidth=170
+let pipeWidth=70
+let gap=150
 
 function resetGame(){
 bird.y=200
@@ -101,11 +99,9 @@ return false
 }
 
 function drawScore(){
-
 ctx.fillStyle="white"
 ctx.font="30px Arial"
 ctx.fillText(score,180,50)
-
 }
 
 function update(){
@@ -134,6 +130,7 @@ hitSound.play()
 gameRunning=false
 
 document.getElementById("gameOverScreen").classList.remove("hidden")
+
 document.getElementById("scoreText").innerText="Score: "+score
 
 document.getElementById("endVideo").play()
@@ -173,8 +170,4 @@ document.getElementById("gameOverScreen").classList.add("hidden")
 resetGame()
 gameRunning=true
 update()
-
 }
-
-
-
