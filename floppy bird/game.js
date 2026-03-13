@@ -4,7 +4,7 @@ const ctx = canvas.getContext("2d")
 canvas.width = 400
 canvas.height = 600
 
-let gravity = 0.5
+let gravity = 0.8
 let velocity = 0
 let lift = -9
 
@@ -34,8 +34,8 @@ height:40
 }
 
 let pipes=[]
-let gap=150
-let pipeWidth=70
+let gap=220
+let pipeWidth=100
 
 function resetGame(){
 bird.y=200
@@ -175,3 +175,4 @@ gameRunning=true
 update()
 
 }
+
