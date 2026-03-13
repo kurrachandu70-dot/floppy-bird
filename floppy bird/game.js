@@ -14,17 +14,17 @@ let score = 0
 
 // images
 const avatar = new Image()
-avatar.src = "assets/avatar.png"
+avatar.src = "avatar.png"
 
 const pipeImg = new Image()
-pipeImg.src = "assets/pipe.png"
+pipeImg.src = "pipe.png"
 
 const bg = new Image()
-bg.src = "assets/background.png"
+bg.src = "background.png"
 
 // sounds
-const hitSound = new Audio("assets/hit.mp3")
-const jumpSound = new Audio("assets/jump.mp3")
+const hitSound = new Audio("hit.mp3")
+const jumpSound = new Audio("jump.mp3")
 
 let bird={
 x:80,
@@ -173,4 +173,5 @@ document.getElementById("gameOverScreen").classList.add("hidden")
 resetGame()
 gameRunning=true
 update()
+
 }
